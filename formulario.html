@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center"> Health & Life Gym</h1>
+            <p id="description" class="text-center"><span class="frase" > La diferencia entre lo que quieres y lo que tienes es lo que haces</span> </p>
+        </header>
+    <form id="survey-form">
+        <div class="Grupo-formulario">
+            <label id="name-label" for="name">Nombre</label> 
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre" class="campo-form" required />
+        </div>
+        <div class="Grupo-formulario">
+            <label id="email-label" for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email" class="campo-form" required />
+        </div>
+        <div class="Grupo-formulario">
+            <label id="number-label" for="number">Edad<span class="option">(opcional)</span></label>
+            <input type="number" id="number" name="edad" min="10" max="99" placeholder="Ingresa tu edad" class="campo-form" >
+        </div>
+        <div class="Grupo-formulario">
+            <p>¿Cual tipo de ejercicio te gusta mas?</p>
+            <select name="role" id="dropdown" class="campo-form" required>
+             <option value="aerobico"> Ejercicio aeróbico </option>
+             <option value="fuerza"> Ejercicio de fuerza</option>
+             <option value="flexibilidad"> Ejercicio de flexibilidad</option>
+             <option value="otro"> Otro</option>
+            </select>
+        </div>
+        <div class="Grupo-formulario">
+            <p>¿Recomedarias el gimnasio a tus amigos o conocidos? </p> 
+            <label>
+                <input 
+                 name="recomendacion-usuario"
+                 value="definitely"
+                 type="radio"
+                 class="input-radio"
+                 checked
+                 > Porsupuesto
+            </label>
+            <label>
+                <input
+                 name="recomendacion-usuario" 
+                 value="definitely" 
+                 type="radio"
+                 class="input-radio"
+                > Tal vez
+            </label>
+            <label>
+                <input
+                 name="recomendacion-usuario" 
+                 value="definitely" 
+                 type="radio"
+                 class="input-radio"
+                >No
+            </label>
+            
+        </div>
+        <div class="Grupo-formulario">
+            <p>¿Porqué irias al gimnasio?</p>
+            <label>
+                <input
+                 name="motivo"
+                 value="Estilo de vida"
+                 type="checkbox"
+                 class="input-checkbox"
+                > Estilo de vida
+            </label>
+            <label>
+                <input
+                name="motivo"
+                value="Entrenamiento de fuerza"
+                type="checkbox"
+                class="input-checkbox"
+                >Entrenamiento de fuerza
+            </label>
+            <label >
+                <input
+                 name="motivo"
+                 value="Pérdida de peso"
+                 type="checkbox"
+                 class="input-checkbox"
+                >Pérdida de peso
+            </label>  
+            <label >
+                <input
+                 name="motivo"
+                 value="Mejora de salud"
+                 type="checkbox"
+                 class="input-checkbox"
+                >Mejora de salud
+            </label>
+            <label >
+                <input
+                 name="motivo"
+                 value="Ambiente social"
+                 type="checkbox"
+                 class="input-checkbox"
+                >Ambiente social
+            </label>
+        </div>
+        <div class="Grupo-formulario">
+            <p>¿Comentarios o sugerencias?</p>
+            <textarea 
+            name="comentario" 
+            id="comentario" 
+            class="input-textarea"
+            placeholder="Ingrese un comentario"></textarea>
+        </div>
+        <div class="Grupo-formulario">
+            <button type="submit" id="submit" class="submit-botton" >
+             Enviar
+            </button>
+         </div>
+       </form>
+     </div>
+   </body>
+</html>
+
+
+<!-- font-family: 'Pacifico', cursive; Pacific-->
+<!-- font-family: 'Ubuntu', sans-serif; Ubuntu-->
